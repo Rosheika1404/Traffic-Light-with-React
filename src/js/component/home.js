@@ -17,8 +17,18 @@ export function Home() {
 						// 	""
 					}
 					onClick={() => setSelectColor("red")}></div>
-				<div className="light yellow"></div>
-				<div className="light green"></div>
+				<div
+					className={
+						"light yellow " +
+						(selectColor === "yellow" ? "selected" : "")
+					}
+					onClick={() => setSelectColor("yellow")}></div>
+				<div
+					className={
+						"light green " +
+						(selectColor === "green" ? "selected" : "")
+					}
+					onClick={() => setSelectColor("green")}></div>
 			</div>
 		</div>
 	);
